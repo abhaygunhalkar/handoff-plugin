@@ -96,6 +96,22 @@ Paste that into Claude Desktop, and it now knows exactly where things stand
   — but that requires that connector to already be configured; it's not
   part of what this plugin sets up for you.
 
+
+## Use cases
+
+**Switching windows mid-project.** You've spent an hour in Claude Code
+deciding on an architecture, rejecting a couple of approaches along the
+way. You switch to a Claude Desktop chat to think through an unrelated
+question, then come back to the project later — run `/handoff` first,
+paste the summary into Desktop, and it already knows what was decided and
+why, no re-explaining needed.
+
+**Getting a second opinion without losing context.** You're debugging
+something in Claude Code and want a second, uncluttered Claude Desktop
+conversation to reason about it fresh — but it still needs to know what's
+already been ruled out. Paste the handoff summary in, and Desktop can build
+on what's already known instead of re-suggesting fixes you've already tried.
+
 ## License
 
 MIT — see [LICENSE](LICENSE) for details.
