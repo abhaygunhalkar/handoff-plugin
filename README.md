@@ -98,4 +98,4 @@ Paste that into Claude Desktop, and it now knows exactly where things stand
 
 ## License
 
-MIT (or update this to whatever you decide before publishing)
+MIT — see [LICENSE](LICENSE) for details.
