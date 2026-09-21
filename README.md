@@ -32,7 +32,7 @@ five-minute re-explanation.
 ## Installation
 
 ```
-/plugin marketplace add YOUR_GITHUB_USERNAME/handoff-plugin
+/plugin marketplace add YOUR_abhaygunhalkar/handoff-plugin
 /plugin install handoff@handoff-marketplace
 ```
 
