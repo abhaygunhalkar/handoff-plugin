@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
+# Local testing artifacts (not part of the plugin itself)
+.ai-context/

@@ -1,0 +1,8 @@
+{
+  "name": "handoff",
+  "version": "0.1.0",
+  "description": "Generates a curated session handoff summary (decisions, rejected alternatives, open blockers) so you can bring context from Claude Code into a Claude Desktop/Claude.ai chat without re-explaining your project from scratch.",
+  "author": {
+    "name": "Abhay Kumar Gunhalkar"
+  }
+}

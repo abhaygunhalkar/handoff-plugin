@@ -1,0 +1,14 @@
+{
+  "name": "handoff-marketplace",
+  "description": "A single-plugin marketplace hosting 'handoff' — a Claude Code plugin that   carries session context into Claude Desktop/Claude.ai chats.",
+  "owner": {
+    "name": "Abhay Kumar Gunhalkar"
+  },
+  "plugins": [
+    {
+      "name": "handoff",
+      "source": "./",
+      "description": "Generates a curated session handoff summary (decisions, rejected alternatives, open blockers) so you can bring context from Claude Code into a Claude Desktop/Claude.ai chat without re-explaining your project from scratch."
+    }
+  ]
+}
