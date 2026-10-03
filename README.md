@@ -33,7 +33,7 @@ five-minute re-explanation.
 
 ```
 /plugin marketplace add abhaygunhalkar/handoff-plugin
-/plugin install handoff@handoff-marketplace
+/plugin install context-handoff@handoff-marketplace
 ```
 
 Choose **user scope** when prompted, so it's available across all your
