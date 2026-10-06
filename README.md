@@ -1,4 +1,4 @@
-# handoff
+# context-handoff
 
 Carry your Claude Code project context into a separate Claude Desktop or
 Claude.ai chat — without re-explaining your architecture, decisions, and
@@ -12,17 +12,17 @@ working through a problem in Claude Code and then switch to a Claude
 Desktop chat to keep thinking it through, ask a side question, or plan next
 steps, that chat starts with no idea what you just did.
 
-`handoff` closes that gap with a two-second copy-paste instead of a
+`context-handoff` closes that gap with a two-second copy-paste instead of a
 five-minute re-explanation.
 
 ## What it does
 
-- **`/handoff`** — generates a curated summary of your current Claude Code
+- **`/context-handoff:handoff`** — generates a curated summary of your current Claude Code
   session: decisions made (with the reasoning behind them), alternatives
   that were considered and rejected, open blockers, and any conventions you
   stated along the way. Prints it in the chat, ready to copy, and also
   writes it to `.ai-context/handoff.md` in your project.
-- **Automatic session-end reminder** — a hook nudges you to run `/handoff`
+- **Automatic session-end reminder** — a hook nudges you to run `/context-handoff:handoff`
   when a session ends, so it doesn't rely on remembering to do it.
 - **A consistent format, every time** — instead of a generic "summarize
   this conversation" (which varies in what it captures run to run), the
@@ -32,7 +32,7 @@ five-minute re-explanation.
 ## Installation
 
 ```
-/plugin marketplace add abhaygunhalkar/handoff-plugin
+/plugin marketplace add abhaygunhalkar/context-handoff-plugin
 /plugin install context-handoff@handoff-marketplace
 ```
 
@@ -45,12 +45,16 @@ projects, not just one repo.
 2. At any point — mid-session or right before you're about to switch to
    another Claude window — run:
    ```
-   /handoff
+   /context-handoff:handoff
    ```
 3. Copy the printed summary.
 4. Paste it into your Claude Desktop or Claude.ai chat. That conversation
    now has the context it needs to reason about your project correctly,
    without you re-explaining anything.
+
+Claude Code namespaces plugin commands as `plugin-name:command`, so the full
+command is `/context-handoff:handoff`. Typing `/handoff` and picking it from
+the autocomplete list works too.
 
 You don't need to do anything special to trigger the automatic reminder —
 it fires on its own when a Claude Code session ends.
@@ -58,7 +62,7 @@ it fires on its own when a Claude Code session ends.
 ## Example
 
 ```
-/handoff
+/context-handoff:handoff
 
 ## invoice-parser — session handoff
 
@@ -102,7 +106,7 @@ Paste that into Claude Desktop, and it now knows exactly where things stand
 **Switching windows mid-project.** You've spent an hour in Claude Code
 deciding on an architecture, rejecting a couple of approaches along the
 way. You switch to a Claude Desktop chat to think through an unrelated
-question, then come back to the project later — run `/handoff` first,
+question, then come back to the project later — run `/context-handoff:handoff` first,
 paste the summary into Desktop, and it already knows what was decided and
 why, no re-explaining needed.
 
