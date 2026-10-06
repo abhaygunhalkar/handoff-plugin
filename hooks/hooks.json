@@ -1,12 +1,12 @@
 {
-  "description": "Reminds the user to run /handoff at session end so context isn't lost between sessions.",
+  "description": "Reminds the user to run /context-handoff:handoff at session end so context isn't lost between sessions.",
   "hooks": {
     "SessionEnd": [
       {
         "hooks": [
           {
             "type": "command",
-            "command": "echo \"[$(date '+%Y-%m-%d %H:%M:%S')] SessionEnd hook fired — reminder: run /handoff before your next session if you want a context summary to carry over.\" >> ~/.handoff-plugin-hook.log"
+            "command": "echo \"[$(date '+%Y-%m-%d %H:%M:%S')] SessionEnd hook fired — reminder: run /context-handoff:handoff before your next session if you want a context summary to carry over.\" >> ~/.handoff-plugin-hook.log"
           }
         ]
       }

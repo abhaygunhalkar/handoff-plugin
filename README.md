@@ -21,7 +21,11 @@ five-minute re-explanation.
   session: decisions made (with the reasoning behind them), alternatives
   that were considered and rejected, open blockers, and any conventions you
   stated along the way. Prints it in the chat, ready to copy, and also
-  writes it to `.ai-context/handoff.md` in your project.
+  writes it to `.ai-context/handoff.md` in your project. If the session had
+  nothing worth handing off (no decisions, blockers, etc.), it prints a
+  single "Nothing to hand off" line and leaves any existing
+  `.ai-context/handoff.md` untouched, so an empty session never overwrites a
+  useful earlier handoff.
 - **Automatic session-end reminder** — a hook nudges you to run `/context-handoff:handoff`
   when a session ends, so it doesn't rely on remembering to do it.
 - **A consistent format, every time** — instead of a generic "summarize
