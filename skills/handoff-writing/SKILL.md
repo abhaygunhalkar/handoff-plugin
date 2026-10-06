@@ -1,6 +1,6 @@
 ---
 name: handoff-writing
-description: Use when generating a session handoff summary (triggered by the /handoff command or the SessionEnd hook) to bring Claude Code project context into a separate Claude Desktop or Claude.ai chat. Defines exactly what to capture and what to leave out so summaries stay consistent across sessions.
+description: Use when generating a session handoff summary (triggered by the /context-handoff:handoff command or the SessionEnd hook) to bring Claude Code project context into a separate Claude Desktop or Claude.ai chat. Defines exactly what to capture and what to leave out so summaries stay consistent across sessions.
 ---
 
 # Handoff Summary Writing
